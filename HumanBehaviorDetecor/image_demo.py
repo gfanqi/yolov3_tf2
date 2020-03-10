@@ -22,7 +22,7 @@ def use_model(original_image, label):
         YOLO = YOLOv3(True)
         # YOLO.load_weights('./saved_model/Yolo_epoch_25_loss_64.19.h5')
         model = plugmodel()
-        model.load_weights('./saved_model/plug_model_epoch_0_loss_2.96.h5', by_name=True)
+        model.load_weights('./saved_model/saved_weights.h5', by_name=True)
         flag =False
     image_data = utils.image_preporcess(np.copy(original_image), [input_size, input_size])
     image_data = image_data[np.newaxis, ...].astype(np.float32)
@@ -48,8 +48,8 @@ for i in range(1, 200):
     original_image, label, _ = dataset.Dataset('train').get_sample(i)
     original_image = cv2.cvtColor(original_image, cv2.COLOR_BGR2RGB)
     original_image_size = original_image.shape[:2]
-    # conv_tensors = use_model(original_image, label, )
-    # show(conv_tensors)
-    c = show_label(original_image, label)
-    show(c)
+    conv_tensors = use_model(original_image, label, )
+    show(conv_tensors)
+    # c = show_label(original_image, label)
+    # show(c)
 

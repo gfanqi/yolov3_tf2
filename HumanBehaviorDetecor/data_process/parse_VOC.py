@@ -110,7 +110,7 @@ def parse_VOC_xlm_jpg(anno_dict):
             f.write(line + '\n')
 
 if __name__ == '__main__':
-    # actions = parse_action1()
-    # anno_dict = parse_action2(actions)
-    # parse_VOC_xlm_jpg(anno_dict)
-    parse_xml(r'D:\dataset\fall_label/')
+    actions = parse_action1()
+    anno_dict = parse_action2(actions)
+    parse_VOC_xlm_jpg(anno_dict)
+    # parse_xml(r'D:\dataset\fall_label/')

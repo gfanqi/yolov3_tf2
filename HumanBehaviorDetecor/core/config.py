@@ -46,7 +46,7 @@ __C.TEST.IOU_THRESHOLD = 0.45
 
 # DATA_PARSE
 __C.DATA = edict()
-__C.DATA.PASCAL_VOC_ANNOTATION = r"D:\dataset\VOCdevkit\VOC2012\Annotations"
-__C.DATA.PASCAL_VOC_IMAGE = r"D:\dataset\VOCdevkit\VOC2012\JPEGImages/"
-__C.DATA.PASCAL_VOC_PERSONS = r'D:\dataset\VOCdevkit\VOC2012\ImageSets\Main\person_trainval.txt'
-__C.DATA.PASCAL_VOC_ACTION = r'D:\dataset\VOCdevkit\VOC2012\ImageSets\Action'
+__C.DATA.PASCAL_VOC_ANNOTATION = r"F:\dataset\VOC\train\VOCdevkit\VOC2012\Annotations"
+__C.DATA.PASCAL_VOC_IMAGE = r"F:\dataset\VOC\train\VOCdevkit\VOC2012\JPEGImages/"
+__C.DATA.PASCAL_VOC_PERSONS = r'F:\dataset\VOC\train\VOCdevkit\VOC2012\ImageSets\Main\person_trainval.txt'
+__C.DATA.PASCAL_VOC_ACTION = r'F:\dataset\VOC\train\VOCdevkit\VOC2012\ImageSets\Action'

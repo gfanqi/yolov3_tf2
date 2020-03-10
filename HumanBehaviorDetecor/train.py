@@ -40,7 +40,7 @@ epoch_loss = 0
 if os.path.exists('./log/global_steps.json'):
     with open('./log/global_steps.json', 'r') as f:
         global_steps = json.load(f)['steps']
-    model.load_weights('./saved_model/plug_model_epoch_5_loss_3.73.h5')
+    model.load_weights('./saved_model/plug_model_epoch_6_loss_1.38.h5')
 else:
     global_steps = 1
 
